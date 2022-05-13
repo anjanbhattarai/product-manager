@@ -1,0 +1,38 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+header{
+  margin: 35px 0px;
+  font-size: xx-large;
+}
+
+.submit{
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: large;
+  background-color: #3434eb;
+  color: aliceblue;
+}
+.form{
+  display: flex;
+  justify-content:space-between;
+  width: 300px;
+  margin: auto;
+  border-radius: 30px;
+  padding: 10px;
+  font-size: x-large;
+  background-color: rgb(198, 204, 210);
+}
+
+.text{
+  border-radius: 30px;
+  width:60%;
+  height: 30px;
+  font-size: large;
+}
