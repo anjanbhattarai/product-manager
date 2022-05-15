@@ -2,7 +2,10 @@ import React from 'react';
 import {useState} from 'react';
 import axios from "axios";
 
-function Product() {
+function Product(props) {
+
+    const {productList,setProductList} = props;
+
     const [title,setTitle] = useState("")
     const [price, setPrice] = useState("")
     const [description, setDescription] = useState("")
@@ -17,6 +20,7 @@ function Product() {
         .then(res =>{
             console.log (res);
             console.log(res.data);
+            setProductList([...productList,res.data])
             setTitle("");
             setPrice("");
             setDescription("");
