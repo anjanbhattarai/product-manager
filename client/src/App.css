@@ -34,10 +34,25 @@ header{
   border-radius: 30px;
   width:60%;
   height: 30px;
-  font-size: large;
+  font-size:x-large;
 }
 
 .displayId{
   font-size: x-large;
+}
 
+.products{
+  font-size:xx-large;
+}
+
+.deleteButton{
+  font-size: large;
+  border-radius: 10px;
+  width: 60px;
+  background-color: #3434eb;
+  color: aliceblue;
+}
+.edit{
+  font-size: large;
+  margin-right: 7px;
 }

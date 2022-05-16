@@ -29,5 +29,23 @@ module.exports = {
         .catch ((err) =>{
             res.status(400).json({message: "something went wrong in findById", error: err});
         });
+    },
+    updateProduct: (req,res) =>{
+        Product.updateOne ({_id:req.params.id},req.body,{new: true, runValidators: true})
+        .then (updateOne =>{
+            res.status(200).json(updateOne);
+        })
+        .catch(err =>{
+            res.status(400).json({message: "something went wrong in updateOne", error: err});
+        })
+    },
+    deleteProduct: (req,res)=>{
+        Product.deleteOne({_id:req.params.id})
+        .then (deleteOne =>{
+            res.status(200).json(deleteOne)
+        })
+        .catch(err =>{
+            res.status(400).json({message: "something went wrong in deleteOne", error: err})
+        })
     }
 }
